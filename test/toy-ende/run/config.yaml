@@ -1,0 +1,12 @@
+model: model_step_1000.pt
+src: example.vocab.src
+tgt: example.vocab.tgt
+transforms: [onmt_tokenize]
+batch_size: 16
+gpu: 0
+src_subword_type: bpe
+src_subword_model: subwords.en_de.bpe
+src_onmttok_kwargs: '{"mode": "aggressive"}'
+tgt_subword_type: bpe
+tgt_subword_model: subwords.en_de.bpe
+tgt_onmttok_kwargs: '{"mode": "aggressive"}'
